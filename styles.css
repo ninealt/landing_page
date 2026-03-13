@@ -1,0 +1,364 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2d2d2d;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #3a3a3a;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+
+.logo span {
+  color: #E04040;
+}
+
+.navbar .nav-link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #3a3a3a;
+  transition: color 0.2s;
+}
+
+.navbar .nav-link:hover {
+  color: #E87040;
+}
+
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#heroCarousel {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item {
+  height: 100%;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#heroCarousel .carousel-item {
+  transition: opacity 1.5s ease-in-out;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(58, 58, 58, 0.88) 0%, rgba(58, 58, 58, 0.45) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 140px 0 100px;
+}
+
+.min-vh-75 {
+  min-height: 60vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 36px;
+  max-width: 560px;
+}
+
+.hero .btn-primary,
+.cta-section .btn-primary {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+  border: none;
+}
+
+.hero .btn-primary {
+  background: #E04040;
+  color: #fff;
+}
+
+.hero .btn-primary:hover {
+  background: #c73535;
+  transform: translateY(-2px);
+}
+
+.logos-section {
+  padding: 40px 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.logos-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #999;
+  margin-bottom: 24px;
+}
+
+.logos-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px 48px;
+}
+
+.logo-item {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #aaa;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.logo-item:hover {
+  color: #E87040;
+}
+
+.beneficios {
+  padding: 96px 0;
+  background: #B5CFC0;
+}
+
+.beneficio-card {
+  text-align: center;
+  padding: 40px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.beneficio-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  border-color: #E8943A;
+}
+
+.beneficio-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: #E8943A;
+}
+
+.beneficio-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #3a3a3a;
+}
+
+.beneficio-card p {
+  font-size: 0.9375rem;
+  color: #5a5a5a;
+  line-height: 1.6;
+}
+
+.como-funciona {
+  padding: 96px 0;
+  background: #fff;
+}
+
+.paso-numero {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #E87040;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.paso h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #3a3a3a;
+}
+
+.paso p {
+  font-size: 0.9375rem;
+  color: #5a5a5a;
+}
+
+.cta-section {
+  padding: 96px 0;
+  background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);
+}
+
+.cta-content h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.cta-content p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 36px;
+}
+
+.cta-section .btn-primary {
+  background: #E04040;
+  color: #fff;
+}
+
+.cta-section .btn-primary:hover {
+  background: #c73535;
+  transform: translateY(-2px);
+}
+
+.footer {
+  padding: 40px 0;
+  background: #2d2d2d;
+  color: rgba(181, 207, 192, 0.7);
+}
+
+.footer .logo {
+  color: #B5CFC0;
+}
+
+.footer .logo span {
+  color: #E04040;
+}
+
+.footer p {
+  font-size: 0.875rem;
+}
+
+.footer-links a {
+  font-size: 0.875rem;
+  color: rgba(181, 207, 192, 0.7);
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #B5CFC0;
+}
+
+/*
+   RESPONSIVE
+*/
+
+@media (max-width: 767.98px) {
+  .navbar {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 12px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    padding: 16px 0;
+    gap: 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-content {
+    padding: 120px 0 80px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 36px;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 100px 0 60px;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .beneficios,
+  .como-funciona,
+  .cta-section {
+    padding: 64px 0;
+  }
+}
