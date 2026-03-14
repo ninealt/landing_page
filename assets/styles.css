@@ -9,6 +9,11 @@ body {
   background: #fff;
 }
 
+/* Títulos con Nunito */
+h1, h2, h3, .section-title, .logo {
+  font-family: 'Nunito', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -25,6 +30,7 @@ img {
   text-align: center;
   margin-bottom: 48px;
   color: #3a3a3a;
+  font-family: 'Nunito', sans-serif;
 }
 
 .header {
@@ -102,7 +108,7 @@ img {
 
 .hero h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
   color: #fff;
@@ -444,7 +450,7 @@ img {
 
 .cta-section {
   padding: 96px 0;
-  background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #2d2d2d 100%);
 }
 
 .cta-content h2 {
