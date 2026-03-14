@@ -6,7 +6,7 @@
 
 Una observación fue que faltaban las preguntas frecuentes, ya que no detalla el funcionamiento ni como funciona el servicio.
 
-Tambien la falta de un formulario de contacto visible ni una plataforma (como correo).
+También la falta de un formulario de contacto visible ni una plataforma (como correo).
 
 Apartado de ayuda al cliente.
 
